@@ -21,7 +21,8 @@ def test_deck_generation(character, start_deck, model_path, output_path):
         c2 = Counter(end_deck)
 
         diff = c2-c1
-        output.append(f"Deck {deck_number} added {len(list(diff.elements()))} cards: {list(diff.elements())}")
+        print(f"Deck {deck_number} added {len(list(diff.elements()))} cards: {list(diff.elements())}")
+        output.append(end_deck)
         deck_number += 1
     
     json.dump(output, open(output_path, "w"))

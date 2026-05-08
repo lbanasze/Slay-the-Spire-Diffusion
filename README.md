@@ -91,6 +91,16 @@ from visualize import runs
 runs()
 ```
 
+## Comparing Generated Decks to Real Wins
+
+`compare_decks.py` compares the generated decks in `trials/` against winning decks from `../code/cleaned_runs.json`. Run it from this directory:
+
+```
+python compare_decks.py
+```
+
+It prints two summary tables (unweighted and weighted) with deck size, Jaccard similarity, and top-card overlap per character, followed by a ranked side-by-side card comparison for each character and model variant.
+
 ## File Overview
 
 | File | Description |
@@ -103,3 +113,4 @@ runs()
 | `sample.py` | Full generation and deck completion |
 | `visualize.py` | Loss curve and dataset plots |
 | `main.py` | Entry point |
+| `compare_decks.py` | Compare generated decks to real winning decks |
