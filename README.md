@@ -93,7 +93,7 @@ runs()
 
 ## Comparing Generated Decks to Real Wins
 
-`compare_decks.py` compares the generated decks in `trials/` against winning decks from `../code/cleaned_runs.json`. Run it from this directory:
+`compare_decks.py` compares the generated decks in `trials/` against winning decks from `cleaned_runs.json`. Run it from this directory:
 
 ```
 python compare_decks.py
